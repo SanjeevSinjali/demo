@@ -1,0 +1,73 @@
+body {
+    font-family: "Nunito Sans", sans-serif;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  header {
+    background-color: #286ce2;
+    color: white;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: #286ce2;
+  }
+
+  .main-image {
+    width: 90%;
+  }
+  .main-header {
+    font-size: 2.5em;
+    text-align: left;
+  }
+  .content {
+    margin-top: 40px;
+    display: flex;
+    gap: 2rem;
+  }
+  .content .text {
+    width: 60%;
+  }
+  .content .image-wrapper {
+    width: 60%;
+  }
+  .text {
+    margin-top: 20px;
+  }
+  .image-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .image-wrapper img {
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 1000px) {
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+    }
+    .content .text {
+      width: 80%;
+    }
+    .content .image-wrapper {
+      width: 80%;
+    }
+    .text{
+      margin-bottom: 40px;
+    }
+  }
